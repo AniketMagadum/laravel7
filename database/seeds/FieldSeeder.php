@@ -1,5 +1,6 @@
 <?php
 
+use App\Field;
 use Illuminate\Database\Seeder;
 
 class FieldSeeder extends Seeder
@@ -11,6 +12,6 @@ class FieldSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(Field::class, 5)->create();
     }
 }

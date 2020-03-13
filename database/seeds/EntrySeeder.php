@@ -1,9 +1,9 @@
 <?php
 
-use App\Form;
+use App\Entry;
 use Illuminate\Database\Seeder;
 
-class FormSeeder extends Seeder
+class EntrySeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,6 +12,6 @@ class FormSeeder extends Seeder
      */
     public function run()
     {
-        factory(Form::class, 5)->create();
+        factory(Entry::class, 5)->create();
     }
 }

@@ -15,4 +15,9 @@ class Form extends Model
     {
         return $this->hasMany(Entry::class);
     }
+
+    public function fields()
+    {
+        return $this->hasMany(Field::class);
+    }
 }

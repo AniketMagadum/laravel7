@@ -17,7 +17,7 @@ class CreateFieldsTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('label');
-            $table->bigInteger('form_id')->unsigned();
+            $table->bigInteger('form_id')->unsigned()->nullable();
             $table->timestamps();
         });
 

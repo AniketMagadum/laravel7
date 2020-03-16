@@ -10,6 +10,5 @@ $factory->define(Field::class, function (Faker $faker) {
     return [
         'name' => $faker->word,
         'label' => $faker->word,
-        'form_id' => factory(Form::class)->create()->id
     ];
 });
